@@ -1,0 +1,122 @@
+** Subcircuit - Folded Cascode Amplifier with CMFB **
+.include 'aux_p'
+.include 'aux_n'
+
+.subckt folded_cascode_amp	vdd	vss	vin+	vin-	vo+	vo-
+
+** Parameter Define **
+.para	len=0.36u
+.para	len1=0.18u
+
+.para	w1=124.2u	w2=w1
+*.para	w1=117.99u
+*.para	w2=130.41u
+.para	w3=64u		w4=w3
+.para	w5=21.6u	w6=w5
+.para	w7=8.028u	w8=w7
+.para	w9=30.456u	w10=w9
+
+.para	w11=1.85u
+.para	w13=19.6u	w14=w13
+.para	w17=60.25u
+.para	w12=1.22u	w20=1.68u
+.para	w15=1.06u	w16=7.1u
+.para	w18=1.1u	w19=1.222u
+.para	w22=2.74u	w21=1.74u
+
+*.para	w1=140u		w2=w1
+*.para	w3=76.7u	w4=w3
+*.para	w5=48.6u	w6=w5
+*.para	w7=17.5u	w8=w7
+*.para	w9=45.5u	w10=w9
+*.para	w11=1.85u
+*.para	w13=108u	w14=w13
+*.para	w17=60.25u
+*.para	w12=1.15u	w20=1.68u
+*.para	w15=1.06u	w16=4.9u
+*.para	w18=1.1u	w19=1.28u
+*.para	w22=2.74u	w21=1.74u
+
+** Circuit Netlist **
+
+m01	8	vin+	2	vdd	cmosp	w=w1	l=len1
++as='w1*0.54u'	ad='w1*0.54u'	ps='2*w1+2*0.54u'	pd='2*w1+2*5.4u'
+
+m02	9	vin-	2	vdd	cmosp	w=w2	l=len1
++as='w2*0.54u'	ad='w2*0.54u'	ps='2*w2+2*0.54u'	pd='2*w2+2*5.4u'
+
+m03	4	3	vdd	vdd	cmosp	w=w3	l=len
++as='w3*0.54u'	ad='w3*0.54u'	ps='2*w3+2*0.54u'	pd='2*w3+2*5.4u'
+
+m04	5	3	vdd	vdd	cmosp	w=w4	l=len
++as='w4*0.54u'	ad='w4*0.54u'	ps='2*w4+2*0.54u'	pd='2*w4+2*5.4u'
+
+m05	vo-	12	4	vdd	cmosp	w=w5	l=len
++as='w5*0.54u'	ad='w5*0.54u'	ps='2*w5+2*0.54u'	pd='2*w5+2*5.4u'
+
+m06	vo+	13	5	vdd	cmosp	w=w6	l=len
++as='w6*0.54u'	ad='w6*0.54u'	ps='2*w6+2*0.54u'	pd='2*w6+2*5.4u'
+
+m07	vo-	14	8	vss	cmosn	w=w7	l=len
++as='w7*0.54u'	ad='w7*0.54u'	ps='2*w7+2*0.54u'	pd='2*w7+2*5.4u'
+
+m08	vo+	15	9	vss	cmosn	w=w8	l=len
++as='w8*0.54u'	ad='w8*0.54u'	ps='2*w8+2*0.54u'	pd='2*w8+2*5.44u'
+
+m09	8	10	vss	vss	cmosn	w=w9	l=len
++as='w9*0.54u'	ad='w9*0.54u'	ps='2*w9+2*0.54u'	pd='2*w9+2*5.4u'
+
+m10	9	10	vss	vss	cmosn	w=w10	l=len
++as='w10*0.54u'	ad='w10*0.54u'	ps='2*w10+2*0.54u'	pd='2*w10+2*5.4u'
+
+m11	1	1	vdd	vdd	cmosp	w=w11	l=len
++as='w11*0.54u'	ad='w11*0.54u'	ps='2*w11+2*0.54u'	pd='2*w11+2*5.4u'
+
+m12	10	10	vss	vss	cmosn	w=w12	l=len
++as='w12*0.54u'	ad='w12*0.54u'	ps='2*w12+2*0.54u'	pd='2*w12+2*5.4u'
+
+m13	11	vo-	vdd	vdd	cmosp	w=w13	l=len
++as='w13*0.54u'	ad='w13*0.54u'	ps='2*w13+2*0.54u'	pd='2*w13+2*5.4u'
+
+m14	11	vo+	vdd	vdd	cmosp	w=w14	l=len
++as='w14*0.54u'	ad='w14*0.54u'	ps='2*w14+2*0.54u'	pd='2*w14+2*5.4u'
+
+m15	3	10	vss	vss	cmosn	w=w15	l=len
++as='w15*0.54u'	ad='w15*0.54u'	ps='2*w15+2*0.54u'	pd='2*w15+2*5.4u'
+
+m16	3	3	vdd	vdd	cmosp	w=w16	l=len
++as='w16*0.54u'	ad='w16*0.54u'	ps='2*w16+2*0.54u'	pd='2*w16+2*5.4u'
+
+m17	2	1	11	vdd	cmosp	w=w17	l=len
++as='w17*0.54u'	ad='w17*0.54u'	ps='2*w17+2*0.54u'	pd='2*w17+2*5.4u'
+
+m18	7	10	vss	vss	cmosn	w=w18	l=len
++as='w18*0.54u'	ad='w18*0.54u'	ps='2*w18+2*0.54u'	pd='2*w18+2*5.4u'
+
+m19	7	7	vdd	vdd	cmosp	w=w19	l=len
++as='w19*0.54u'	ad='w19*0.54u'	ps='2*w19+2*0.54u'	pd='2*w19+2*5.4u'
+
+m20	10	1	vdd	vdd	cmosp	w=w20	l=len
++as='w20*0.54u'	ad='w20*0.54u'	ps='2*w20+2*0.54u'	pd='2*w20+2*5.4u'
+
+m21	6	1	vdd	vdd	cmosp	w=w21	l=len
++as='w21*0.54u'	ad='w21*0.54u'	ps='2*w21+2*0.54u'	pd='2*w21+2*5.4u'
+
+m22	6	6	vss	vss	cmosn	w=w22	l=len
++as='w22*0.54u'	ad='w22*0.54u'	ps='2*w22+2*0.54u'	pd='2*w22+2*5.4u'
+
+x1	vdd	vss	6	4	12	aux_p
+x2	vdd	vss	6	5	13	aux_p
+x3	vdd	vss	7	8	14	aux_n
+x4	vdd	vss	7	9	15	aux_n
+
+ib	1	vss	10u
+
+*vb3 vb3 0 dc=450m
+*vb6 vb6 0 dc=-444m
+*vb7 vb7 0 dc=273m
+*vb10 vb10 0 dc=-400m
+*vb17 vb17 0 dc=325m
+
+.ends
+************************

@@ -1,0 +1,17 @@
+** Subcircuit - aux_p **
+.subckt	aux_p	vdd	vss	vi+	vi-	vo
+
+m1	1	1	vi-	vdd	cmosp	w=10.94u	l=0.36u	m=0.8
++as='10.94u*0.54u'	ad='10.94u*0.54u'	ps='2*10.94u+2*0.54u'	pd='2*10.94u+2*0.54u'
+
+m2	vo	1	vdd	vdd	cmosp	w=2.6u	l=0.36u	m=0.8
++as='2.6u*0.54u'	ad='2.6u*0.54u'	ps='2*2.6u+2*0.54u'	pd='2*2.6u+2*0.54u'
+
+m3	1	vi+	vss	vss	cmosn	w=2.44u	l=0.36u	m=0.8
++as='2.44u*0.54u'	ad='2.44u*0.54u'	ps='2*2.44u+2*0.54u'	pd='2*2.44u+2*0.54u'
+
+m4	vo	vi+	vss	vss	cmosn	w=4.88u	l=0.36u	m=0.8
++as='4.88u*0.54u'	ad='4.88u*0.54u'	ps='2*4.88u+2*0.54u'	pd='2*4.88u+2*0.54u'
+
+.ends
+************************
