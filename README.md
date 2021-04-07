@@ -13,15 +13,15 @@ Specification and Result
 ------------------
 ![Specification and Result](https://user-images.githubusercontent.com/32325433/113892260-6a895200-97f8-11eb-801e-4a1ca2cbb827.png)
 
-To simulate via HSPICE:\
+To simulate via HSPICE:
 ```
-hspice opamp_diffgain.sp > opamp_diffgain.lis\
+hspice opamp_diffgain.sp > opamp_diffgain.lis
 ```
-To view the output file:\
+To view the output file:
 ```
 cat opamp_diffgain.lis
 ```
-To view the output waveform via Synopsys WaveView Analyzer:\
+To view the output waveform via Synopsys WaveView Analyzer:
 ```
 wv &
 ```
