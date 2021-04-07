@@ -2,7 +2,7 @@
 EESM 5120 Midterm Project - Amplifier Design
 ===============================================
 To simulate via HSPICE:
-  hspice opamp_diffgain.sp > opamp_diffgain.lis
+  hspice opamp_diffgain.sp > opamp_diffgain.lis   
 To view the output:
     cat opamp_diffgain.lis
 Simulate differential gain, common mode gain, Power Consumption 
