@@ -1,0 +1,41 @@
+* "simulator" "HSPICE" 
+* "version" "F-2011.09 64-BIT"
+* "format" "HSP"
+* "rundate" "20:08:56 04/06/2021 "
+* "netlist" "opamp_diffgain.sp "
+* "runtitle" "* eesm5120 amplifier design"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 100 =   0.            
++ 101 =   1.0000        
++ 102 =   1.0000        
++ vdd =   1.0000        
++ vin+ =   1.0000        
++ vin- =   1.0000        
++ vo+ =-956.4366m       
++ vo- =-956.4366m       
++ vss =  -1.0000        
++ x1.1 = 325.7934m       
++ x1.2 = 999.9994m       
++ x1.3 = 450.8562m       
++ x1.4 = 854.6060m       
++ x1.5 = 854.6060m       
++ x1.6 =-444.1419m       
++ x1.7 = 273.1659m       
++ x1.8 =-966.9192m       
++ x1.9 =-966.9192m       
++ x1.10 =-400.0487m       
++ x1.11 = 999.9999m       
++ x1.12 = 203.6435m       
++ x1.13 = 203.6435m       
++ x1.14 = 950.1761m       
++ x1.15 = 950.1761m       
++ x1.x1.1 = 286.7904m       
++ x1.x2.1 = 286.7904m       
++ x1.x3.2 =-425.7868m       
++ x1.x4.2 =-425.7868m       
+***   END: Saved Operating Point ***                     

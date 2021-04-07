@@ -1,0 +1,37 @@
+* "simulator" "HSPICE" 
+* "version" "F-2011.09 64-BIT"
+* "format" "HSP"
+* "rundate" "23:11:16 04/07/2021 "
+* "netlist" "opamp_slewrate.sp "
+* "runtitle" "* eesm5120 amplifier design"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ vdd =   1.0000        
++ vin+ =  -1.0000        
++ vo+ =-932.2150m       
++ vo- = 992.7824m       
++ vss =  -1.0000        
++ x1.1 = 325.7934m       
++ x1.2 =-174.9333m       
++ x1.3 = 450.8562m       
++ x1.4 = 992.9102m       
++ x1.5 = 854.6107m       
++ x1.6 =-444.1419m       
++ x1.7 = 273.1659m       
++ x1.8 =-863.4869m       
++ x1.9 =-942.9070m       
++ x1.10 =-400.0487m       
++ x1.11 = 955.4416m       
++ x1.12 =-987.3099m       
++ x1.13 = 203.4703m       
++ x1.14 =-451.9551m       
++ x1.15 = 922.0940m       
++ x1.x1.1 = 463.8458m       
++ x1.x2.1 = 286.7964m       
++ x1.x3.2 =-296.3561m       
++ x1.x4.2 =-395.6424m       
+***   END: Saved Operating Point ***                     

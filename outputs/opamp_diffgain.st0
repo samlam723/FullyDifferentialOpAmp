@@ -1,0 +1,67 @@
+***** HSPICE -- F-2011.09 64-BIT (Sep  5 2011) linux ******
+ Input File: opamp_diffgain.sp
+ lic:
+ lic: FLEXlm: v10.8
+ lic: USER:   kslamaf              HOSTNAME: EEX052
+ lic: HOSTID:                      PID:      23216
+ lic: Using FLEXlm license file:
+ lic: 27041@eesvr5.ece.ust.hk
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 20-may-2021/2020.12
+ lic: 1(in_use)/25(total) FLOATING license(s) on SERVER eesvr5.ece.ust.hk
+ lic:
+ init: begin read circuit files,  cpu clock=  2.00E-02
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/ad
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/ad
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/beha
+                         ve
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/bjt
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/burr
+                         _brn
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/coml
+                         inear
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/dio
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/fet
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/lin_
+                         tech
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/pci
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/sign
+                         et
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/ti
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/tlin
+                         e
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/xili
+                         nx
+       option runlvl
+       option post
+       option probe
+       option nomod
+       option dcon     =     1.00
+ init: end read circuit files,  cpu clock=  3.00E-02 memory=       292 kb
+ init: begin check errors,  cpu clock=  3.00E-02
+ init: end check errors,  cpu clock=  3.00E-02 memory=       848 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  3.00E-02
+       establish matrix -- done,  cpu clock=  3.00E-02 memory=       876 kb
+       re-order matrix -- done,  cpu clock=  3.00E-02 memory=       872 kb
+ init: end setup matrix,  cpu clock=  3.00E-02 memory=       922 kb
+ output: opamp_diffgain.sw0
+ sweep: dc dc0    begin, #sweeps=2001 cpu clock=  3.00E-02
+ sweep: dc dc0    end,  cpu clock=  3.80E-01 memory=       922 kb
+ dcop: begin dcop,  cpu clock=  3.80E-01
+ dcop: end dcop,  cpu clock=  3.80E-01 memory=       922 kb  tot_iter=      37
+ output: opamp_diffgain.ac0
+ sweep: ac ac0    begin, #sweeps= 871 cpu clock=  3.80E-01
+ ac: frequency=    2.05E+00
+ ac: frequency=    1.48E+01
+ ac: frequency=    1.10E+02
+ ac: frequency=    8.15E+02
+ ac: frequency=    6.04E+03
+ ac: frequency=    4.48E+04
+ ac: frequency=    3.32E+05
+ ac: frequency=    2.46E+06
+ ac: frequency=    1.82E+07
+ ac: frequency=    1.35E+08
+ ac: frequency=    1.00E+09
+ sweep: ac ac0    end,  cpu clock=  3.90E-01 memory=       946 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

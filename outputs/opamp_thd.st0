@@ -1,0 +1,63 @@
+***** HSPICE -- F-2011.09 64-BIT (Sep  5 2011) linux ******
+ Input File: opamp_thd.sp
+ lic:
+ lic: FLEXlm: v10.8
+ lic: USER:   kslamaf              HOSTNAME: EEX052
+ lic: HOSTID:                      PID:      15297
+ lic: Using FLEXlm license file:
+ lic: 27041@eesvr5.ece.ust.hk
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 20-may-2021/2020.12
+ lic: 1(in_use)/25(total) FLOATING license(s) on SERVER eesvr5.ece.ust.hk
+ lic:
+ init: begin read circuit files,  cpu clock=  3.00E-02
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/ad
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/ad
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/beha
+                         ve
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/bjt
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/burr
+                         _brn
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/coml
+                         inear
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/dio
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/fet
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/lin_
+                         tech
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/pci
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/sign
+                         et
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/ti
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/tlin
+                         e
+       option search   = /usr/synopsys/hspice-vf2011.09/hspice/parts/xili
+                         nx
+       option runlvl
+       option post
+       option probe
+       option nomod
+       option dcon     =     1.00
+ init: end read circuit files,  cpu clock=  3.00E-02 memory=       291 kb
+ init: begin check errors,  cpu clock=  3.00E-02
+ init: end check errors,  cpu clock=  3.00E-02 memory=       816 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  3.00E-02
+       establish matrix -- done,  cpu clock=  4.00E-02 memory=       843 kb
+       re-order matrix -- done,  cpu clock=  4.00E-02 memory=       839 kb
+ init: end setup matrix,  cpu clock=  4.00E-02 memory=       887 kb
+ dcop: begin dcop,  cpu clock=  4.00E-02
+ dcop: end dcop,  cpu clock=  4.00E-02 memory=       887 kb  tot_iter=      26
+ output: opamp_thd.tr0
+ sweep: tran tran0    begin, stop_t=  5.00E-03 #sweeps=**** cpu clock=  4.00E-02
+ tran: time= 5.0000E-04 tot_iter=    1358 conv_iter=     634 cpu clock= 1.10E-01
+ tran: time= 1.0000E-03 tot_iter=    2708 conv_iter=    1264 cpu clock= 1.70E-01
+ tran: time= 1.5000E-03 tot_iter=    4058 conv_iter=    1894 cpu clock= 2.40E-01
+ tran: time= 2.0000E-03 tot_iter=    5408 conv_iter=    2524 cpu clock= 3.10E-01
+ tran: time= 2.5007E-03 tot_iter=    6760 conv_iter=    3155 cpu clock= 3.80E-01
+ tran: time= 3.0007E-03 tot_iter=    8110 conv_iter=    3785 cpu clock= 4.40E-01
+ tran: time= 3.5007E-03 tot_iter=    9460 conv_iter=    4415 cpu clock= 5.10E-01
+ tran: time= 4.0007E-03 tot_iter=   10810 conv_iter=    5045 cpu clock= 5.80E-01
+ tran: time= 4.5007E-03 tot_iter=   12160 conv_iter=    5675 cpu clock= 6.50E-01
+ tran: time= 5.0000E-03 tot_iter=   13508 conv_iter=    6304 cpu clock= 7.10E-01
+ sweep: tran tran0    end,  cpu clock=  7.10E-01 memory=       920 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
