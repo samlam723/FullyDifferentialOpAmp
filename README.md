@@ -1,5 +1,4 @@
-# FullyDifferentialOpAmp
-EESM 5120 Midterm Project - Amplifier Design
+EESM 5120 Midterm Project - Fully Differential Operational Amplifier Design
 ===============================================
 Click below to see the project report\
 <a href="https://github.com/samlam723/FullyDifferentialOpAmp/blob/main/EESM5120_midterm_project_report.pdf" target="_blank">EESM 5120 Project Report</a>
